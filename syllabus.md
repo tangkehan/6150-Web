@@ -1,5 +1,5 @@
-﻿# Course Syllabus: INFO 6150 - $SENPAI_CAMPUS
-# $SENPAI_COURSE_SEMESTER Semester $SENPAI_COURSE_YEAR - $SENPAI_COURSE_DAY
+﻿# Course Syllabus: INFO 6150 - Seattle
+# Spring Semester 2023 - Fri
 Instructor: Brett Ritter `<b.ritter@neu.edu>`
 
 This course covers the essentials of front-end web development in terms of User Interface/User Experience (UI/UX).  This will NOT teach you to be a designer, but will give you the building blocks to work with designers or decide you want to learn more about Human/Computer Interaction (HCI).  It will also not teach you all the steps to perform full web development (see INFO6250 for that) but will give you the basis to be effective at UI/UX design and implementation for web development.
@@ -46,11 +46,11 @@ Some of what we cover
 ### Section 1: Rendering Fundamentals
 
 #### Schedule
-- $SENPAI_WEEK_1 (assignment: setup-test)
-- $SENPAI_WEEK_2 (assignment: basic-layout)
-- $SENPAI_WEEK_3 (assignment: responsive-grid)
-- $SENPAI_WEEK_4 (assignment: basic-form)
-- $SENPAI_WEEK_5 (assignment: project1)
+- Fri Sep 8 
+- Fri Sep 15 
+- Fri Sep 22 
+- Fri Sep 29 
+- Fri Oct 6 
 
 #### Topics
 
@@ -66,15 +66,15 @@ Some of what we cover
 
 #### Project Due: HTML and CSS (project1)
 
-$SENPAI_DUE_PROJECT_1
+Thu Oct 19, 11:59pm PT
 
 ### Section 2: Browser Javascript
 
 #### Schedule
-- $SENPAI_WEEK_7 (js-intro)
-- $SENPAI_WEEK_8 (js-forms)
-- $SENPAI_WEEK_9 (project2)
-- NOT Tue Mar 7 (Spring Break)
+- Fri Oct 13
+- Fri Oct 20
+- Fri Oct 27
+- Fri Nov 3
 
 #### Topics
 
@@ -84,17 +84,15 @@ $SENPAI_DUE_PROJECT_1
 
 #### Project Due: Javascript (project2)
 
-Mon Mar 13, 11:59pm PT
+Thu Nov 9, 11:59pm PT
 
 ### Section 3: React Intro
 
 #### Schedule
-- Tue Mar 14 (react-intro)
-- Tue Mar 21 (react-pages)
-- Tue Mar 28 
-- Tue Apr 4 (final project)
-- Tue Apr 11
-- Tue Apr 18
+- Fri Nov 10
+- Fri Nov 17
+- Fri Dec 1  
+- Fri Dec 8
 
 - Intro to React
 - Deeplinking
@@ -102,7 +100,7 @@ Mon Mar 13, 11:59pm PT
 
 ### Final Projects Due 
 - NO EXTENSIONS ON FINAL PROJECT
-Sun Apr 23, 11:59pm PT
+Mon Dec 11, 11:59pm PT
 
-No class Tue Apr 25 (just Project due on Sun Apr 23)
+No class Fri Dec 15 (just Project due on Mon Dec 11, 11:59pm PT_DAY)
 

@@ -1,6 +1,6 @@
 # Assignment - Testing node and git
 
-**Due: $SENPAI_DUE_DATE_01** 
+**Due: Thu Sep 14, 11:59pm PT** 
 
 # Instructions
 
