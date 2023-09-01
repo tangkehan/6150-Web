@@ -5,8 +5,8 @@ This repository is how you will receive and submit your assignments and projects
 Key parts:
 
 - README - this document
-- [setup-for-this-class.md] - Instructions on installing and configuring needed software
-- [do-not-copy-work.md] - The class policy about copying/referring/otherwise working with other code. You MUST follow these rules
+- [[setup-for-this-class.md]] - Instructions on installing and configuring needed software
+- [do-not-copy-work.md]() - The class policy about copying/referring/otherwise working with other code. You MUST follow these rules
 - [syllabus.md] - Specifics about the expected class schedule and grading
 - [work/] - Where new assignments appear and are submitted
 - [classes/] - Where class notes appear
