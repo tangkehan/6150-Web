@@ -1,0 +1,4 @@
+../.DS_Store   
+.DS_Store
+01-setup-test/node_modules/
+01-setup-test/package-lock.json
