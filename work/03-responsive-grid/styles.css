@@ -1,0 +1,122 @@
+body {
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* here is the header part */
+.header {  
+    display: grid;
+    /* grid-template-rows: auto auto; */
+    grid-template-columns: auto 1fr;
+    background-color: rgb(189, 219, 207);
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* justify-items: center; */
+}
+
+.logo {
+    margin: 10px;
+}
+
+
+.header_title {
+    text-align: center;
+}
+
+nav {
+    grid-column: 1/ -1;
+    
+}
+
+
+.menu {
+    list-style-type: none;
+    background-color:rgb(168, 209, 209);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1.5rem;
+}
+ 
+
+
+/* here is the main part */
+.main_title {
+    text-align: center; 
+    color: #0e0303; 
+} 
+
+
+.cardset {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0.5rem;
+    padding: 2rem;
+    background-color: rgb(163, 192, 202);
+    flex-direction:column;
+
+}
+
+.card {
+    grid-column: span 4;
+    border: 1px solid rgb(198, 198, 232);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.card_title {
+    text-align: center;
+}
+
+.card_more {
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #6f563a;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background-color: #c6e2e3;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer_links {
+    list-style-type: none;
+    /* background-color:rgb(69, 138, 138); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin: 0;
+    /* set a smaller footer text size  */
+    font-size: 0.9rem
+}
+
+@media (max-width: 50rem) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .cardset {
+        grid-template-columns: 1fr;
+    }
+  
+    .footer_links {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+  }
