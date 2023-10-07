@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5 ;
+}
+
+header{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #3498DB, #27AE60);
+    margin: 0;
+    padding: 0.1rem;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+main {
+    display: block;
+    margin: auto auto;
+    padding: 2rem;
+}
+
+form {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #F4F4F4;
+    color:#333333;
+    /* text-align: center; */
+
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input, select{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color:#E6E6E6;
+    color:#333333;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+button:hover {
+    background-color: #CCCCCC;
+}
+
+footer {
+    color: #666666;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  
+}
+
+a:hover {
+    text-decoration: underline; 
+    color:  #3498DB;
+  }
+
+
+
+@media (min-width: 800px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main{
+        max-width: 800px;
+    }
+
+    label {
+        text-align: left;
+        /* padding-left:2rem; */
+    }
+
+    .button {
+        grid-column: span 2;   
+    } 
+}
+
+@media (max-width: 800px) {
+
+    main {
+        display: block;
+        margin: auto auto;
+        padding: 2rem;
+    }
+    
+
+    label {
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    input, select{
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+    }
+
+} 
