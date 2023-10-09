@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="styles.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1>404: Title Not Found</h1>
+
+        </header>
+
+        <main>
+            <h2>Registration Form</h2>
+            <!-- The form will submit to /submit using POST -->
+            <form action = '/submit' method="POST">
+                <!-- collect user name -->
+    
+                <label>
+                    <span>Name:  </span>
+                    <input type ="text" name = 'name' required>
+                </label>
+
+                <!-- collect user email -->
+                <label>
+                    <span>Email: </span>
+                    <input type ="email" name = 'email' required>
+                </label>
+                
+                <!-- do the checkbox part -->
+                <label for = "annoy_me">
+                    <span>Do you want us to send you annoying emails?</span>
+                    <input type = "checkbox" name = "annoy_me" checked>
+                </label>
+
+                <!-- drop down  -->
+                <label>
+                    <span>Select tier </span>
+                    <select id = "tier" name = "tier" required>
+                        <option value="" disabled selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+           
+
+                <!-- The form will have a submit button with the text "Register" -->
+                <div class = "button">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+
+        </main>
+
+        <footer>
+            <a href="about.html">Privacy policy</a>
+        </footer>
+    
+    </body>
+
+</html>
