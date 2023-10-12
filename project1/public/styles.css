@@ -1,3 +1,4 @@
+/* General Style */
 body {
     grid-template-rows: auto 1fr auto;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f2f2f2;
 }
 
 
@@ -41,3 +43,219 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+
+/* HomePage */
+
+nav {
+    grid-column: 1/ -1;
+    
+}
+
+
+
+.cardset {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0.5rem;
+    padding: 2rem;
+    flex-direction:column;
+
+}
+
+.photo{
+    margin: auto;
+    display: flex;
+    width: 20rem;
+    height: auto; 
+    align-items: center;
+}
+
+h2 {
+    grid-column: 1/ -1;
+}
+
+
+.card {
+    grid-column: span 4;
+    border: 1px solid rgb(198, 198, 232);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.card_title {
+    text-align: center;
+}
+
+.card_more {
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #6f563a;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0rem;
+    background-color:rgb(168, 209, 209);
+} 
+
+
+.menu li {
+    position: relative;
+    padding:1rem;
+}
+
+.dropdown-menu li {
+    display: block;
+    white-space: nowrap;
+}
+
+
+/* Style for dropdown menu items */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f4c6c6;
+    list-style-type: none;
+    text-align: left;
+    padding:0;
+}
+
+/* Hover effect for navigation items */
+.menu li:hover {
+    background-color: #ffffff;  
+    color:#000000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #c1f2d2;
+}
+
+
+
+/* Register form */
+.form {
+    margin: auto auto;
+    padding: 2rem;
+    align-items: center;
+    gap: 20px;
+    max-width:70rem;
+}
+
+
+.form-title{
+    grid-column: span 12;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #F4F4F4;
+    color:#333333;
+    border: 2px solid #7e7a7d95;
+    padding: 1rem;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input, select{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color:#E6E6E6;
+    color:#333333;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;   
+    
+    
+}
+
+button:hover {
+    background-color: #CCCCCC;
+}
+
+input:required:invalid{
+    border: 2px solid #FF5733; 
+}
+
+input:required:invalid{
+    background-color: #FFC0CB; 
+}
+
+/* About page */
+.content {
+    display:grid;
+    grid-column: span 12;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    /* test later */
+    /* max-width:60rem; */
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+/* adapable */
+
+@media (max-width: 66rem) {
+    .cardset {
+        grid-template-columns: 1fr;
+    }
+
+
+    label {
+        display: block;
+        grid-column: span 6;
+        margin-bottom: 1rem;
+    }
+
+} 

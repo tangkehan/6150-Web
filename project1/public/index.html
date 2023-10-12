@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
         <title>Homepage</title>
     </head>
@@ -13,10 +13,45 @@
                 <img class = "logo" src="Sesame.jpeg" alt="logo">
             </a>
             <h1 class = 'header_title'>Homepage</h1>
+            <nav>
+                <ul class="menu">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="About.html">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="mission.html">Our Mission</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            
         </header>
 
         <main>
-            Here is the main part
+            <div class = 'cardset'>
+                <h2>Learn about my cat Sesame</h2>
+                <div class = "card">
+                    <img class = 'photo' src="high5.jpeg" alt="kitten">
+                    <h3 class = "card_title">I love cat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a class = "card_more" aria-label="Read more" href = "lolcats.html"> Read More</a>
+                </div>
+                <div class = "card">
+                    <img class = 'photo'  src="hello.jpeg" alt="kitten">
+                    <h3 class = "card_title">Cats</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a class = "card_more" aria-label="Read more" href = "lolcats.html"> Read More</a>
+                </div>
+                <div class = "card">
+                    <img class = 'photo' src="sunshine.jpeg" alt="kitten">
+                    <h3 class = "card_title">Cat Magic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a class = "card_more" aria-label="Read more" href = "lolcats.html"> Read More</a>
+                </div>
+            </div>
         </main>
 
         <footer>
