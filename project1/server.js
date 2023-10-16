@@ -9,6 +9,7 @@ const sanitize = text => text
 
 app.use(express.static('public'));
 
+
 app.post('/register', express.urlencoded({extended: false}), (req, res) => {
   const params = req.body;
 
