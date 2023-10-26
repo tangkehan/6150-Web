@@ -1,0 +1,139 @@
+/* General Style */
+body {
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Cursive, sans-serif;
+    font-size: 1.25rem;
+}
+
+
+header {  
+    padding-left: 1rem;
+    margin: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle,#e09b11 0%, #ea6f1b 100%);
+    color: #fff;
+    text-align: left;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+}
+
+main{
+    flex: 1;
+    padding:2rem;
+}
+
+
+footer {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle,#e09b11 0%, #ea6f1b 100%);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Register form */
+
+.form {
+    margin: auto auto;
+    align-items: center;
+    max-width:70rem;
+}
+
+form {
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #F4F4F4;
+    color:#333333;
+    border: 2px solid #7e7a7d95;
+    padding: 1rem;
+}
+
+.form-title{
+    grid-column: span 12;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.name, .email, .confirm-email, select{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    width: 80%; 
+}
+
+
+
+label[for = "wants-spam"]{
+    display: block;
+}
+
+.name-error, .email-error, .confirm-error{
+    color:red;
+}
+
+.name-error{
+    display:none;
+}
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color:#E6E6E6;
+    color:#333333;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;   
+    
+    
+}
+
+button:hover {
+    background-color: #CCCCCC;
+}
+
+
+/* adapable */
+
+@media (max-width: 40rem) {
+    label {
+        display: flex;
+        grid-column: span 6;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+
+    form{
+        margin: 0.8rem;
+    }
+
+} 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>🍁Happy Autumn🍁</h1>
+        </header>
+        <main>
+            <div class = "form">
+                <h2 class = "form-title">Registration Form</h2>
+                <!-- The form will submit to /submit using POST -->
+                <form action ='/register' method="POST">
+                    <!-- collect user name -->
+                    <label for = "name">
+                        <span>Name:  *require</span>
+                        <input type ="text" class = "name" name = 'name'>
+                        <span class = "name-error">Name is required</span>
+                    </label>
+
+                    <!-- collect user email -->
+                    <label for = "email">
+                        <span>Email:  *require</span>
+                        <input type ="text" class = "email" name = 'email'>
+                        <span class = "email-error"></span>
+                    </label>
+                    
+                    <!-- confirm email -->
+                    <label for = "confirm-email">
+                        <span>Confirm Email: </span>
+                        <input type ="text" class = "confirm-email"name = 'confirm-email'>
+                        <span class = "confirm-error"></span>
+                    </label>
+
+                    <!-- do the checkbox part -->
+                    <label for = "wants-spam">
+                        <span>Do you want to receive annoying emails?</span>
+                        <input type = "checkbox" name = "wants-spam">
+                    </label>
+
+                    <!-- drop down  -->
+                    <label>
+                        <span>Select tier </span>
+                        <select id = "tier" name = "tier">
+                            <option value="" disabled selected>Please select</option>
+                            <option value="1">Silver Tier</option>
+                            <option value="2">Gold Tier</option>
+                            <option value="3">Platinum Tier</option>
+                        </select>
+                    </label>
+                    <!-- The form will have a submit button with the text "Register" -->
+                    <div class = "button">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+
