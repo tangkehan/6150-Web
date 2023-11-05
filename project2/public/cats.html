@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cats_styles.css"/>
+        <title>SEASAME</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html">
+                <img class = "logo" src="Sesame.jpeg" alt="logo">
+            </a>
+            <h1 class = 'header_title'>SESAME</h1>
+            <nav>
+                <div class = "menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu">
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="cats.html">Famous Cats</a></li>
+                    <li><a href="event.html">Cat events</a></li>
+                </ul>
+            </nav>
+            <a href="#main" class="skip">Skiplink</a>
+        </header>
+
+        <main id="main">
+            <div class = 'cardset'>
+                <div class = "card">
+                    <h2 class = "card_title">So Chill</h2>
+                    <img class = 'photo' src="chill.jpg" alt="cat sit so chill">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+                <div class = "card">
+                    <h2 class = "card_title">Lazy me</h2>
+                    <img class = 'photo' src="lazy.jpg" alt="a lazy cat">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+                <div class = "card">
+                    <h2 class = "card_title">I'm so cute</h2>
+                    <img class = 'photo' src="cute.jpg" alt="my cat is a cutie pie">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+                <div class = "card">
+                    <h2 class = "card_title">Portiait</h2>
+                    <img class = 'photo' src="walk.jpg" alt="my cat is the queen!">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+                <div class = "card">
+                    <h2 class = "card_title">I'm so small</h2>
+                    <img class = 'photo' src="fit.jpg" alt="my cat fit in a bag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+                <div class = "card">
+                    <h2 class = "card_title">Batcat</h2>
+                    <img class = 'photo' src="batcat.jpg" alt="cat in a batman costume">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at justo eu ex tincidunt euismod. 
+                        Quisque auctor neque eu risus fringilla auctor. </p>
+                    <p>Phasellus non risus <span class="subscribe-text">Subscribe</span>  at purus vulputate consequat.</p>
+                </div>
+            </div>
+
+            <div class="dialog">
+                <form class = 'form' action ='/subscribe' method="POST">
+                    <h2>Subscribe to the Latest Mews!</h2>
+                    <label for = "email">
+                        <span>Email:  *require</span>
+                        <input type ="text" class = "email" name = 'email'>
+                        <span class = "email-error"></span>
+                    </label>
+                    <label for = "confirm-email">
+                        <span>Confirm Email:  *require </span>
+                        <input type ="text" class = "confirm-email"name = 'confirm-email'>
+                        <span class = "confirm-error"></span>
+                    </label>
+                    <div class = 'buttons'>
+                        <button type="submit" class="subscribeButton">Subscribe</button>
+                        <button type="button" class="cancelButton">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            <li><a href="workForUs.html">Work For Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="socialMedia.html">Social Meida</a></li>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
