@@ -19,11 +19,9 @@ function App() {
   return (
     <div className = 'app-container'>
       <p>Count is {count}</p> 
-      <div className = "buttons">
-        <button onClick = {minusOne} disabled={!count}>-</button>
-        <button onClick = {addOne}>+</button>
-        {count === 0 && <Reorder onReorder = {doReorder} />}
-      </div>
+      <button onClick = {minusOne} disabled={!count}>-</button>
+      <button onClick = {addOne}>+</button>
+      {count === 0 && <Reorder onReorder = {doReorder} />}  
     </div> 
   )
 }

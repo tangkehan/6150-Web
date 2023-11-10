@@ -10,8 +10,11 @@
 
 
 .app-container {
+  display: flex;
   text-align: center;
-  width: 20rem;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -20,15 +23,15 @@
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
 }
 
-.buttons {
-  margin-top: 20px;
-}
 
 button {
-  margin: 0 5px;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem; 
 }
 
 .reorder-button {
