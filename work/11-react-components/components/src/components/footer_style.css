@@ -1,0 +1,9 @@
+footer {
+    background: radial-gradient(circle,#e7e5e1 0%, #9f96c5 100%);
+    color: #fff;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
