@@ -1,0 +1,30 @@
+nav {
+    display: grid;
+    grid-column: 1/ -1;   
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0rem;
+    color:#201e1e;
+    background-color:#e6e6e6;
+    border: 1px solid rgb(198, 198, 232);
+} 
+
+
+.menu li {
+    position: relative;
+    font-size:1.2rem;
+    padding:1rem;
+}
+
+.menu li:hover {
+    display:inline;
+    background-color: #f8f8f8;  
+    color:#000000;
+} 
+

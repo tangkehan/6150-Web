@@ -1,7 +1,7 @@
 import React from 'react';
 import './text_style.css';
 
-const Text = () => {
+const Home = () => {
     return (
         <div className = 'text_content'>
             <p>Animal Crossing: New Horizons </p>
@@ -21,4 +21,4 @@ const Text = () => {
     );
 };
 
-export default Text;
+export default Home;
