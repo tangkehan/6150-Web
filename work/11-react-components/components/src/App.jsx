@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import NavBar from './components/Navbar';
 import Villagers from './pages/Villagers';
 import Home from './pages/Home';
-import Events from './pages/Events';
+import News from './pages/News';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <main>
           { (page === 'Home') && <Home/> }
           {page === 'Villagers' && <Villagers />}
-          {page === 'Events' && <Events />}
+          {page === 'News' && <News />}
         </main>
         <Footer />
       </div>

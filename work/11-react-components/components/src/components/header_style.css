@@ -4,14 +4,15 @@ header {
     align-items: center;
     padding: 0;
     margin: 0;
-    background: radial-gradient(circle,#d89e2a 0%, #ea6f1b 100%);
-    color: #fff;
+    background: hsl(43 58% 78%) ;
+    color:  hsl(34 80% 31%);
     text-align: center;
 }
 
-h1{
+.header_title{
+    font-family: 'Arvo', serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 
@@ -20,11 +21,8 @@ h1{
     display: block;
     width: 8rem;
     height: auto;
-}
-
-
-.header_title {
-    text-align: left; 
     padding-left:1rem;
 }
+
+
 
