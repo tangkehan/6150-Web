@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/App.css">#root {
+  width: 100%;
+  margin: 0;
+  padding: 0rem;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main{
+  flex: 1;
+  background-color: #fbfeee;
+}
+
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/header_style.css">header {  
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: hsl(43 58% 78%) ;
+    color:  hsl(34 80% 31%);
+    text-align: center;
+}
+
+.header_title{
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+.logo {
+    margin: auto;
+    display: block;
+    width: 8rem;
+    height: auto;
+    padding-left:1rem;
+}
+
+
+
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/footer_style.css">footer {
+    background: hsl(43 58% 78%) ;
+    color: #fff;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer a{
+    /* font-family: Cursive, sans-serif; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/navBar_style.css">nav {
+    display: grid;
+    grid-column: 1/ -1;   
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0rem;
+    color:#eae6e6;
+    background-color:hsl(34, 37%, 68%) ;
+} 
+
+
+.menu a {
+    /* font-family: Cursive, sans-serif; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu li{
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    color: #e5d3a5;
+}
+
+/* .menu li:hover {
+    display:inline;
+    background-color:  hsl(43, 48%, 66%);  
+    color:#000000;
+    padding: 0, 0.5rem;
+}  */
+
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/pages/villagers_style.css">
+.cardset {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0.5rem;
+    padding: 2rem;
+    flex-direction:column;
+
+}
+
+/* 
+.card {
+    grid-column: span 4;
+    display: grid;
+    border: 1px solid rgb(198, 198, 232);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.card_title {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.photo{
+    grid-column: 1/ -1;
+    display: flex;
+    width: 220px;
+    height: 300px; 
+    margin: 0 auto;
+    padding:1rem;
+    align-items: center;
+    position: relative;
+}
+
+h2{
+    font-weight: bold;
+    font-size:1 rem;
+    padding:1rem;
+    margin:0;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* padding-left: 5rem; */
+}
+
+
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/card_style.css">
+.card {
+    grid-column: span 4;
+    display: grid;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(34 69% 90%);;
+    
+} 
+
+
+.name {
+    background: #e8b010;
+    border: 2px solid #e8b010;
+    border-radius: 20px;
+    padding: 0 2.3rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+img {
+  width: auto;
+  height: 250px;
+  border-radius: 9px;
+  padding: 1rem 0; 
+}
+
+
+.img_container{
+    background: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    width: 100%;
+    padding: 1rem 0; 
+    margin-bottom: 1rem;
+}
+
+.animal-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    border: 1px solid;
+    font-size:1.2rem;
+    font-weight: bold;
+    padding:1rem;
+}
+  
+.animal-table tr {
+    border-bottom: 1px solid #ccc;
+}
+  
+.animal-table td {
+    padding: 0.5;
+    border-right: 1px solid #ccc;
+  }
+  
+.header-row {
+    font-weight: bold;
+    text-align: center;
+    background: hsl(195 52% 85%);
+  }
+  
+.info-row td {
+    text-align: center;
+}
+
+.buylink{
+    cursor: pointer;
+
+}</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/form.css">
+.dialog {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(43 58% 78%) ;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight:bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    align-items: center;
+}
+
+.dialog input {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    width: 85%; 
+    margin-bottom:0.5rem;
+}
+
+
+
+label {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+button{
+    font-size: 1rem;
+    font-weight:bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color:#E6E6E6;
+    color:#333333;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;  
+    margin:0.5rem;
+    /* width: 80%;  */
+}
+
+.subscribeButton{
+    background-color:#ace5b4;
+}
+
+.subscribeButton:hover {
+    background-color: #99efb7;
+}
+.cancelButton:hover {
+    background-color: #CCCCCC;
+}
+
+.email-error, .confirm-error{
+    color:red;
+}
+ </style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/pages/text_style.css">.text_content {
+    margin: 1.5rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    max-width:80rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding:0.5rem;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/pages/news_style.css">
+
+.panelset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; 
+    gap: 20px;
+    padding-top:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page_title {
+    width: 80%;
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    background: #e8dec5;
+    color: #503b06;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid #503b06;
+    border-radius: 10px;
+    margin: 0;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/components/panel_style.css">
+.panel {
+    width: 80%;
+    border: 2px solid #f1b574;;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #61332b;
+    background: #ffe3c5;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fbfeee;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .title-text {
+    text-align: left;
+    padding-left:2rem;
+  }
+
+  .title-time{
+    text-align: right;
+    padding-right:2rem;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-img img {
+    width: auto;
+    height: 150px;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #f1b574;
+    border-radius: 10px;
+  }
+    
+
+</style><style type="text/css" data-vite-dev-id="/Users/kehan/Documents/2023_fall/6150/student-seainfo6150--tangkehan/work/11-react-components/components/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="root-container"><header><img class="logo" src="./Vite + React_files/LOGO.png" alt="my cutie baby"><h1 class="header_title">ANIMAL CROSSING</h1></header><nav><ul class="menu"><li><a href="http://localhost:5173/#">Home</a></li><li><a href="http://localhost:5173/#">Villagers</a></li><li><a href="http://localhost:5173/#">News</a></li></ul></nav><main><div class="cardset"><div class="card"><h2 class="name">Rosie</h2><div class="img_container"><img src="./Vite + React_files/Ankha_NH.png" alt="Rosie image"></div><table class="animal-table"><tbody><tr class="header-row"><td>Species</td><td>Personality</td><td>Gender</td></tr><tr class="info-row"><td>Cat</td><td>Peppy</td><td>Female</td></tr></tbody></table><button class="buylink">Would you like to buy the Amiibo?</button><div class="dialog"><form class="form"><h2>Register to Buy Amibo Here!</h2><div class="container"><label for="email"><span>Email:  *require</span><input type="text" class="email" name="email"><span class="email-error"></span></label><label for="confirm-email"><span>Confirm Email:  *require </span><input type="text" class="confirm-email" name="confirm-email"><span class="confirm-error"></span></label><div class="buttons"><button type="submit" class="subscribeButton">Subscribe</button><button type="button" class="cancelButton">Cancel</button></div></div></form></div></div></div></main><footer><li><a href="http://localhost:5173/Privacy.html">Privacy Policy</a></li><li><a href="http://localhost:5173/workForUs.html">Work For Us</a></li><li><a href="http://localhost:5173/contact.html">Contact Us</a></li><li><a href="http://localhost:5173/socialMedia.html">Social Meida</a></li></footer></div></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body><style>
+@media print {
+  #simplifyJobsContainer {
+    display: none;
+  }
+}
+</style><div id="simplifyJobsContainer" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: visible; z-index: 2147483647;"><span><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://pbanhockgagggenencehbnadejlgchfc/css/styles.css"><style>
+  :host {
+    all: initial;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Palanquin, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(203, 213, 225, 1) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(203, 213, 225, 1);
+    border-radius: 3px;
+    border: 0;
+  }
+</style></template></span></div><script id="simplifyJobsPageScript" src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script></html>
