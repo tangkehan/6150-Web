@@ -7,7 +7,7 @@ import Beau from '../assets/Beau_NH.png';
 import Katt from '../assets/Katt_NH.png';
 import Marshal from '../assets/Marshal_NH.png';
 import Card from '../components/card';
-import Dialog from '../components/Dialog';
+import Dialog from '../components/dialog';
 import { useState } from 'react';
 
 
