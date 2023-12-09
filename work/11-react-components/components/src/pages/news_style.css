@@ -1,0 +1,27 @@
+
+
+.panelset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; 
+    gap: 20px;
+    padding-top:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page_title {
+    width: 80%;
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    background: #e8dec5;
+    color: #503b06;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid #503b06;
+    border-radius: 10px;
+    margin: 0;
+}

@@ -1,0 +1,38 @@
+nav {
+    display: grid;
+    grid-column: 1/ -1;   
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0rem;
+    color:#eae6e6;
+    background-color:hsl(34, 37%, 68%) ;
+} 
+
+
+.menu a {
+    /* font-family: Cursive, sans-serif; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu li{
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    color: #e5d3a5;
+}
+
+/* .menu li:hover {
+    display:inline;
+    background-color:  hsl(43, 48%, 66%);  
+    color:#000000;
+    padding: 0, 0.5rem;
+}  */
+
