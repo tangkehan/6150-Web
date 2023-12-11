@@ -1,0 +1,143 @@
+nav {
+    display: grid;
+    grid-column: 1/ -1;   
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0rem;
+    color:#eae6e6;
+    background-color:hsl(34, 37%, 68%);
+} 
+
+
+.menu a {
+    /* font-family: Cursive, sans-serif; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu li{
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    color: #e5d3a5;
+}
+
+/* .menu li:hover {
+    display:inline;
+    background-color:  hsl(43, 48%, 66%);  
+    color:#000000;
+    padding: 0, 0.5rem;
+}  */
+
+
+/* set the dropdown style */
+
+
+  
+.dropdown {
+    position: relative;
+}
+  
+  /* Style the dropdown link */
+.menu li.dropdown a {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    padding:1rem;
+    align-items: center;
+    justify-content: center; 
+    background-color: #6b2f2f;
+    z-index: 1;
+ 
+}
+
+
+.dropdown-content a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* menu icon */
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color:hsl(34, 37%, 68%);
+    
+}
+
+
+.bar {
+    width: 30px; 
+    height: 3px;
+    background-color: #333;
+    margin: 6px 6px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Adding transition */
+  }
+
+
+  .menu-icon.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+
+@media (max-width:55rem) {
+    .menu-icon {
+        display: block; 
+    }
+
+    .menu {
+        display: none;
+        padding-left: 0.5rem;
+    
+    }
+
+    .menu.open {
+      
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        align-items: flex-start; 
+    }
+
+ 
+    
+
+  
+    
+  
+
+    
+
+}   
