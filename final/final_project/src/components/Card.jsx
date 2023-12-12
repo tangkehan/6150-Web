@@ -4,7 +4,7 @@ import './Card.css';
 import Dialog from './Dialog';
 import Button from './Button';
 
-const Card = ({key, name, imageSrc, species, personality, gender}) => {
+const Card = ({name, imageSrc, species, personality, gender}) => {
     // here is to let the whole page only shows one dialog
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [isFavorite, setIsFavorite] = useState(false);
@@ -41,7 +41,7 @@ const Card = ({key, name, imageSrc, species, personality, gender}) => {
                 </tbody>
             </table>
             <Button type = 'button'  visual="link" text = {`View ${name} Amiibo`} 
-                className = 'buylink' onClick = {toggleDialog} />
+                className = 'lovelink' onClick = {toggleDialog} />
             {isDialogOpen && <Dialog onClose={closeDialog} isFavorite = {isFavorite} setIsFavorite = {setIsFavorite} />}
         </div>
     );

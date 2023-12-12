@@ -10,6 +10,28 @@
   min-height: 100vh; 
 }
 
+.skip {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  margin-bottom:0.5rem;
+  color:#333333;
+}
+
+.skip:not(:focus):not(:active) {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+
 main{
   flex: 1;
   background-color: #fbfeee;

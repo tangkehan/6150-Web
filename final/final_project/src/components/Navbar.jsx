@@ -27,19 +27,18 @@ function NavBar({ setPage }) {
   return (
     <nav>
         <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
       <ul className={`menu ${menuOpen ? 'open' : ''}`}>
         <li><a href="#" onClick={ (event) => go(event, "Home") }>Home</a></li>
-        <li><a href="#" onClick={ (event) => go(event, "Villagers") }>Villagers</a></li>
         <li className = "dropdown">
           <a href="#" onClick={toggleExplore}>Explore</a>
             {exploreOpen && (
                 <ul className="dropdown-content ">
-                  <li><a href="#" onClick={(event) => go(event, "ExploreOption1")}>Food</a></li>
-                  <li><a href="#" onClick={(event) => go(event, "ExploreOption2")}>Fish</a></li>
+                   <li><a href="#" onClick={ (event) => go(event, "Villagers") }>Villagers</a></li>
+                  <li><a href="#" onClick={(event) => go(event, "Fish")}>Fish</a></li>
                 </ul>
             )}
         </li>
