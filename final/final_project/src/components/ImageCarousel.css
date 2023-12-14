@@ -1,0 +1,37 @@
+
+.image-carousel {
+    position: relative;
+    margin: 0 auto; 
+
+}
+  
+.image-carousel img {
+    width:100%; 
+    height: auto; 
+    display: block; 
+}
+
+.image-carousel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(240, 238, 240);
+    color: rgb(1, 1, 1);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1; 
+    outline: none; 
+}
+
+/* .image-carousel button:focus {
+    outline: none; 
+} */
+
+.prev-button{
+    left: 0;
+}
+
+.next-button{
+    right: 0;
+}
